@@ -679,6 +679,7 @@ hr {
 /* course end */
 /* blog section css start */
 .blogs {
+  background-color: rgb(28,58,148);
   padding: 40px 0;
 }
 
