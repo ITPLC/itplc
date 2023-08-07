@@ -672,21 +672,16 @@ hr {
   font-weight: bold;
 }
 
-.form {
-  display: block;
-  justify-content: flex-end;
-}
-.form h1{
-  color: #ccc;
-}
-
 /* course end */
 /* blog section css start */
 .blogs {
   background-color: rgb(28,58,148);
   padding: 40px 0;
 }
-
+.blog-logo img{
+  width:75px;
+  height: 50px; 
+}
 .blogs .container {
   display: flex;
   flex-wrap: wrap;
@@ -745,7 +740,10 @@ hr {
     padding-bottom: 0;
     max-height: 200vh;
   }
-
+  .blog-logo img{
+     width:10vw;
+     height: 10vw; 
+    }
   .blog-card {
     width: 80vw;
     height: auto;
@@ -777,46 +775,96 @@ hr {
     align-self: flex-end;
   }
 }
+.placement{
+  background-color: rgb(28,58,148);
+}
 .placement .section-title {
-  /* text-color : white; */
   text-align: center;
   margin-bottom: 30px;
 }
 .pictures{
-  display: inline-table;
+  display: inline-block;
   justify-content: center;
 }
 
 .pictures img{
-  margin: 105px;
-  margin-bottom: -30px;
-  width: 120px;
-  height: 120px;
+  margin: 50px;
+  width: 100px;
+  height: 80px;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 600px) {
+  .placement .section-title {
+    font-size: 1.2rem; 
+    margin-bottom: 20px; 
+  }
+  
+  .pictures img {
+    margin: 20px; 
+    margin-bottom: -10px; 
+    width: 40px; 
+    height: 32px; 
+  }
 }
 /* footer */
 .footer {
   text-align: left;
+  text-size-adjust: 20px;
   justify-content: space-between;
   align-items: center;
   margin: 5px;
 }
 
-.footer img{
-  height: 25px;
-  margin-bottom: -5px;
+.form {
+  display: grid;
+  justify-content: center;
+}
+.form h1{
+  color: black;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(28,58,148);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: lightblue }
+
+.button:active {
+  background-color: blue;
+  box-shadow: 0 5px lightblue;
+  transform: translateY(4px);
+}
+.contact, .email {
+  display: flex;
+  align-items: center;
+  margin-bottom: -15px;
+}
+
+.contact img, .email img {
+  width: 80px;
+  height: 64px;
+  margin-right: 10px; 
+}
+
+center {
+  display: block; 
 }
 
 .full-bg-color{
   background-image: linear-gradient(to bottom right,rgb(0, 0, 0),lightblue);
 }
-
-/* .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-} */
 
 .course-content {
   display: flex;
